@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+  	<link rel="stylesheet" type="text/css" href="estilo.css">
+  	<title>Filipe Fofinho</title>
+</head>
+<body>
+	<center>
+	<form action="subtrair" method="POST">
+
+		<input name="num1" placeholder="Digite o 1 número" type="number"/>
+		<br>
+		<input name="num2" placeholder="Digite o 2 número" type="number"/>
+		<br>
+		<input type="submit" value="Subtrair"/>
+
+	</form>
+
+	<p>
+		<% 
+			if(locals.resultado)
+				{ %>
+					Resultado: <%= resultado %>
+				<% } %>
+		%>
+	</p>
+	</center>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<style>
+		body {
+		color: #000;
+		font: 12px Verdana, sans-serif;
+		}
+		#conteudo {
+		width: 70%;
+		float: right;
+		text-align: center;
+		}
+		#conteudo h1{
+			margin-right: 50px;
+		}
+		#menu {
+		width: 30%;
+		margin: 0; padding: 0;
+		float: left;
+		}
+		#menu ul li {
+		margin: 0; padding: 0px;
+		border-bottom: 1px solid #CCC;
+		text-align: left;
+		list-style-type: none;
+		}
+		#menu a:link {
+		background: #F5F5F5;
+		color: #666;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 8px;
+		display: block;
+		}
+		#menu a:hover {
+		background: #E5F0FF;
+		color: #039;
+		}
+
+	</style>
+    <meta charset="UTF-8">
+  	<title>Filipe Fofinho</title>
+</head>
+<body>
+
+	<div id="conteudo">
+
+		<h1>
+			Hello World
+		<% 
+			if(locals.nome)
+				{ %>
+					, <%= nome %>! 
+				<% } %>
+		%>
+		</h1>
+	   
+	   	<img src="http://ak-hdl.buzzfed.com/static/2014-10/7/16/enhanced/webdr05/enhanced-27654-1412715016-7.png"/> 
+	
+
+	   <form action="meuNome" method="POST">
+			<input name="nome" placeholder="Digite seu nome aqui" type="text"/>
+			<input type="submit" value="Salvar"/>
+		</form>
+
+	
+	</div>
+	<div id="menu">
+	  <ul>
+	  	<li><a href="/hello">Hello World</a></li>
+		<li><a href="/somar">Somar</a></li>
+		<li><a href="/subtrair">Subtrair</a></li>
+	  </ul>
+	</div>
+
+</body>
+</html>
