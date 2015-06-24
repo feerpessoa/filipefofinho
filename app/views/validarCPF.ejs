@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+  	<link rel="stylesheet" type="text/css" href="estilo.css">
+  	<title>Filipe Fofinho</title>
+</head>
+<body>
+	<center>
+	<form action="validarCPF" method="POST">
+
+		<input name="cpf" placeholder="Não utilize espaços" type="number"/>
+		<br>
+		<input type="submit" value="Validar CPF"/>
+
+	</form>
+
+	<p>
+		<% 
+			if(locals.mensagem)
+				{ %>
+					<%= mensagem %>
+				<% } %>
+		%>
+	</p>
+	</center>
+</body>
+</html>

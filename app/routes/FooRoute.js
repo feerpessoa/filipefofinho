@@ -18,5 +18,9 @@ module.exports = function( app ) {
     app.route("/subtrair")
     	.get(controller.direcionarSubtracao)
     	.post(controller.subtrair);
+
+    app.route("/validarCPF")
+        .get(controller.direcionarCPF)
+        .post(controller.cpf);
     
 };
