@@ -19,7 +19,8 @@
   },
   "scripts": {
     "test": "mocha --harmony-generators",
-    "start": "node server.js"
+    "start": "node server.js",
+    "pretest": "./node_modules/jsxhint/cli.js src/"
   },
   "author": "Fernanda Pessôa :B",
   "license": "ISC"
