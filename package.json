@@ -22,6 +22,6 @@
     "start": "node server.js",
     "pretest": "./node_modules/jsxhint/cli.js src/"
   },
-  "author": "Fernanda Pessôa :B",
+  "author": "Fernanda Pessôa",
   "license": "ISC"
 }
