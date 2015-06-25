@@ -1,7 +1,7 @@
 # filipefofinho
 
 
-https://codeship.com/projects/filipefofinho_UUID/status?branch=master
+https://codeship.com/projects/filipefofinho_940ea680-fd1b-0132-6126-46b29513b11c/status?branch=master
 
 [![Build Status](https://travis-ci.org/feerpessoa/filipefofinho.svg?branch=master)](https://travis-ci.org/feerpessoa/filipefofinho)
 
