@@ -5,4 +5,4 @@
 [![Coverage Status](https://img.shields.io/coveralls/feerpessoa/filipefofinho.svg)](https://coveralls.io/r/feerpessoa/filipefofinho?branch=master)
 
 
-https://codeship.com/projects/940ea680-fd1b-0132-6126-46b29513b11c/status?branch=master
+image:: https://codeship.com/projects/940ea680-fd1b-0132-6126-46b29513b11c/status?branch=master
