@@ -37,6 +37,8 @@ describe( "Teste de validação de CPF", function() {
 			
 			expect(retorno).toBe(false);
 		});
+
+		
 });
 
 describe( "Teste de validação de CNPJ", function() {
@@ -64,7 +66,7 @@ describe( "Teste de validação de CNPJ", function() {
 			expect(retorno).toBe(false);
 		});
 
-		it("Espero false quando passar CNPJ != 14", function() {
+		it("Espero false quando passar CNPJ com quantidade de números diferente de 14", function() {
 			var retorno = controller.validarCNPJ("1111");
 			
 			expect(retorno).toBe(false);

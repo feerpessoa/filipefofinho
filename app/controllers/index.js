@@ -91,6 +91,8 @@ module.exports = function( app ) {
         response.render("validarCPF");     
     },
 
+
+
     validarCPF : function (cpf) {
         var Soma;
         var Resto;
