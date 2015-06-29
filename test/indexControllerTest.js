@@ -31,6 +31,12 @@ describe( "Teste de validação de CPF", function() {
 			
 			expect(retorno).toBe(false);
 		});
+
+		it("Espero false quando passar CPF 0", function() {
+			var retorno = controller.validarCPF("00000000000");
+			
+			expect(retorno).toBe(false);
+		});
 });
 
 describe( "Teste de validação de CNPJ", function() {
