@@ -17,6 +17,16 @@ describe("Teste das operações binárias", function() {
 	console.log(retorno)
 	});
 
+	it("Espero que quando passar 10 dividido por 2 retorne 5", function() {
+		var retorno = assert.equal(controller.dividir2Numeros(10,2), 5);
+	console.log(retorno)
+	});
+
+	it("Espero que quando passar 5 vezes 2 retorne 10", function() {
+		var retorno = assert.equal(controller.multiplicar2Numeros(5,2), 10);
+	console.log(retorno)
+	});
+
 });
 
 describe( "Teste de validação de CPF", function() {

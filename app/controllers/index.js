@@ -87,6 +87,14 @@ module.exports = function( app ) {
         return num1 - num2;
     },
 
+    dividir2Numeros : function (num1, num2) {
+        return num1 / num2;
+    },
+
+    multiplicar2Numeros : function (num1, num2) {
+        return num1 * num2;
+    },
+
     validarCPF : function (cpf) {
         var Soma;
         var Resto;
