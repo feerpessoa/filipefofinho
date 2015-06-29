@@ -125,8 +125,20 @@ describe("Teste das operações", function() {
 });
 
 describe( "Teste de validação de telefone", function() {
-		it("Espero false quando passar telefone inválido", function() {
-			var retorno = controller.validarTelefone("009999999");
+		it("Espero false quando passar telefone com menos de 9 digitos", function() {
+			var retorno = controller.validarTelefone("00999999");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar telefone com mais de 11 digitos", function() {
+			var retorno = controller.validarTelefone("009999999999");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar telefone apenas com 0", function() {
+			var retorno = controller.validarTelefone("0000000000");
 			
 			expect(retorno).toBe(false);
 		});
@@ -160,6 +172,12 @@ describe( "Teste de validação de nome", function() {
 
 		it("Espero false quando passar nome inválido", function() {
 			var retorno = controller.validarNome("huehuehuebr");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("aaa");
 			
 			expect(retorno).toBe(false);
 		});

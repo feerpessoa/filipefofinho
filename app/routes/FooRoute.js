@@ -1,5 +1,6 @@
 module.exports = function( app ) {
     var controller = app.controllers.index;
+    var viewcontroller = app.controllers.viewcontroller;
     
     app.route("/")
     	.get(controller.direcionarIndex);
@@ -18,5 +19,4 @@ module.exports = function( app ) {
     app.route("/subtrair")
     	.get(controller.direcionarSubtracao)
     	.post(controller.subtrair);
-    
 };

@@ -26,6 +26,11 @@ module.exports = function( app ) {
         });
     },
 
+    direcionarCPF : function (request, response)
+    {
+        response.render("validarCPF");
+    },
+
     direcionarMeuNome : function (request, response) 
     {
         response.render("index");
@@ -120,8 +125,12 @@ module.exports = function( app ) {
     }, 
 
     validarTelefone : function( telefone ) {
-        if(telefone.length < 10)
-            return false;         
+        if(telefone.length < 9)
+            return false;   
+        if(telefone.length > 11)
+            return false; 
+        if(telefone == "0000000000")
+            return false;      
         
         return true;
     },
@@ -134,6 +143,9 @@ module.exports = function( app ) {
             return false;
 
         if(nome === "huehuehuebr")  
+            return false; 
+
+        if(nome === "aaa")  
             return false;       
         
         return true;
