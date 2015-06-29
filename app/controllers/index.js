@@ -87,12 +87,6 @@ module.exports = function( app ) {
         return num1 - num2;
     },
 
-    direcionarCPF : function (request, response) {     
-        response.render("validarCPF");     
-    },
-
-
-
     validarCPF : function (cpf) {
         var Soma;
         var Resto;

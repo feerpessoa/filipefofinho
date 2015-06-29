@@ -2,6 +2,7 @@ var controller = require("../app/controllers/index")();
 
 var assert = require("assert");
 var expect = require("expect");
+var should = require("should");
 
 
 describe("Teste das operações binárias", function() {
