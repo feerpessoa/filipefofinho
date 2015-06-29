@@ -32,7 +32,6 @@
   "scripts": {
     "test": "mocha --harmony-generators",
     "start": "node server.js",
-    "pretest": "./node_modules/jsxhint/cli.js src/",
     "coverage": "istanbul cover --report lcovonly _mocha -- -R spec && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "coverage-web": "istanbul cover --report html _mocha -- -R spec"
   },
