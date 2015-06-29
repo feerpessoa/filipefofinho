@@ -16,7 +16,7 @@ module.exports = function( app ) {
 
     direcionarIndex : function (request, response)
     {
-    response.render("index");
+        response.render("index");
     },
 
     direcionarHello : function (request, response)
@@ -28,15 +28,15 @@ module.exports = function( app ) {
 
     direcionarMeuNome : function (request, response) 
     {
-    response.render("index");
+        response.render("index");
     },
 
     meuNome : function (request, response)
     {
-    var nome = request.body.nome;
-    response.render("index", {
-    "nome" : nome
-    }); 
+        var nome = request.body.nome;
+        response.render("index", {
+        "nome" : nome
+        }); 
 
         myCollection.insert({nome: nome}, function(err, result) {
             if(err)
@@ -49,7 +49,7 @@ module.exports = function( app ) {
 
     direcionarSoma : function (request, response)
     {
-    response.render("somar");
+        response.render("somar");
     },
 
     somar : function (request, response) {

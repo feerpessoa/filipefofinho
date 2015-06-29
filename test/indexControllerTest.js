@@ -3,28 +3,83 @@ var controller = require("../app/controllers/index")();
 var assert = require("assert");
 var expect = require("expect");
 
+describe("Teste de HL, index e nome", function() {
+	it("Espero receber a view index como retorno no metodo direcionarIndex", function() {
+
+			var request = { };
+			var response = criarResponse();
+			
+			controller.direcionarIndex( request, response );
+			
+			expect( response.view ).toBe("index");		   
+	});
+
+	it("Espero receber a view hello como retorno no metodo direcionarHello", function() {
+
+			var request = { };
+			var response = criarResponse();
+			
+			controller.direcionarHello( request, response );
+			
+			expect( response.view ).toBe("hello");		   
+	});
+
+	it("Espero receber a view index como retorno no metodo direcionarMeuNome", function() {
+
+			var request = { };
+			var response = criarResponse();
+			
+			controller.direcionarMeuNome( request, response );
+			
+			expect( response.view ).toBe("index");		   
+	});
+	
+});
+
 
 describe("Teste das operações binárias", function() {
 	it("Espero que quando passar 2 e 3 retorne 5", function() {
 
-	var retorno = assert.equal(controller.somar2Numeros(2,3), 5);
-	console.log(retorno)
+		var retorno = assert.equal(controller.somar2Numeros(2,3), 5);
 		
 	});
 
 	it("Espero que quando passar 5 menos 2 retorne 3", function() {
+
 		var retorno = assert.equal(controller.subtrair2Numeros(5,2), 3);
-	console.log(retorno)
+
 	});
 
 	it("Espero que quando passar 10 dividido por 2 retorne 5", function() {
+
 		var retorno = assert.equal(controller.dividir2Numeros(10,2), 5);
-	console.log(retorno)
+
 	});
 
 	it("Espero que quando passar 5 vezes 2 retorne 10", function() {
+
 		var retorno = assert.equal(controller.multiplicar2Numeros(5,2), 10);
-	console.log(retorno)
+
+	});
+
+	it("Espero receber a view subtrair como retorno no metodo direcionarSubtracao", function() {
+
+			var request = { };
+			var response = criarResponse();
+			
+			controller.direcionarSubtracao( request, response );
+			
+			expect( response.view ).toBe("subtrair");		   
+	});
+
+	it("Espero receber a view somar como retorno no metodo direcionarSoma", function() {
+
+			var request = { };
+			var response = criarResponse();
+			
+			controller.direcionarSoma( request, response );
+			
+			expect( response.view ).toBe("somar");		   
 	});
 
 });
@@ -88,3 +143,27 @@ describe( "Teste de validação de CNPJ", function() {
 			expect(retorno).toBe(false);
 		});
 });
+
+function criarResponse() {
+	return {
+	   view : "",
+	   object : {},
+	   
+	   render : function( view, object ) {
+		   this.view = view;
+		   this.object = object;
+	   },
+	   
+	   redirect : function( view ) {
+		   this.view = view;
+	   }
+   };	
+};
+
+function criarRequest( view, objectValue ) {
+	return {
+	   view : view,
+	   object : objectValue,				   
+	   render : function() {}
+   };
+};
