@@ -95,6 +95,18 @@ module.exports = function( app ) {
         return num1 * num2;
     },
 
+    menorNumero : function (num1, num2) {
+        return Math.min(num1, num2);
+    }, 
+
+    maiorNumero : function (num1, num2) {
+        return Math.max(num1, num2);
+    }, 
+
+    raizQuadrada : function (num) {
+        return Math.sqrt(num);
+    },
+
     validarCPF : function (cpf) {
         var Soma;
         var Resto;
@@ -108,16 +120,6 @@ module.exports = function( app ) {
             for (i = 1; i <= 9; i++) {
                 Soma = Soma + parseInt(cpf.substring(i - 1, i)) * (11 - i);
             } 
-
-            Resto = (Soma * 10) % 11;
-
-            if ((Resto == 10) || (Resto == 11)) {
-                Resto = 0;
-            }
-
-            if (Resto != parseInt(cpf.substring(9, 10))) {
-                return false;
-            }
 
             Soma = 0;
 

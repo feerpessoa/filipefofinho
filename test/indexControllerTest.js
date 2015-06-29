@@ -33,7 +33,7 @@ describe("Teste de HL, index e nome", function() {
 			
 			expect( response.view ).toBe("index");		   
 	});
-	
+
 });
 
 
@@ -59,6 +59,26 @@ describe("Teste das operações binárias", function() {
 	it("Espero que quando passar 5 vezes 2 retorne 10", function() {
 
 		var retorno = assert.equal(controller.multiplicar2Numeros(5,2), 10);
+
+	});
+
+	it("Espero que quando passar 5 e 2 retorne 2", function() {
+
+		var retorno = assert.equal(controller.menorNumero(5,2), 2);
+
+	});
+
+	it("Espero que quando passar 5 e 2 retorne 5", function() {
+
+		var retorno = assert.equal(controller.maiorNumero(5,2), 5);
+
+	});
+
+	it("Espero 9 quando passar 81", function() {
+
+		var retorno = controller.raizQuadrada(81);
+
+		expect(retorno).toBe(9)
 
 	});
 
