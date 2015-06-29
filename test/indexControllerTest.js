@@ -37,7 +37,7 @@ describe("Teste de HL, index e nome", function() {
 });
 
 
-describe("Teste das operações binárias", function() {
+describe("Teste das operações", function() {
 	it("Espero que quando passar 2 e 3 retorne 5", function() {
 
 		var retorno = assert.equal(controller.somar2Numeros(2,3), 5);
@@ -82,6 +82,26 @@ describe("Teste das operações binárias", function() {
 
 	});
 
+	it("Espero 126 quando passar 125.7", function() {
+
+		var retorno = controller.arredondaValor(125.7);
+
+		expect(retorno).toBe(126)
+
+	});
+
+	it("Espero que quando passar 4 e 3 retorne 64", function() {
+
+		var retorno = assert.equal(controller.exponencial(4,3), 64);
+
+	});
+
+	it("Espero que quando passar base e altura de um quadrado retorne area", function() {
+
+		var retorno = assert.equal(controller.areaQuadrado(2,2), 4);
+
+	});
+
 	it("Espero receber a view subtrair como retorno no metodo direcionarSubtracao", function() {
 
 			var request = { };
@@ -102,6 +122,48 @@ describe("Teste das operações binárias", function() {
 			expect( response.view ).toBe("somar");		   
 	});
 
+});
+
+describe( "Teste de validação de telefone", function() {
+		it("Espero false quando passar telefone inválido", function() {
+			var retorno = controller.validarTelefone("009999999");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero true quando passar telefone válido", function() {
+			var retorno = controller.validarTelefone("3498220293");
+			
+			expect(retorno).toBe(true);
+		});
+		
+});
+
+describe( "Teste de validação de nome", function() {
+		it("Espero false quando passar nome vazio", function() {
+			var retorno = controller.validarNome(" ");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome nulo", function() {
+			var retorno = controller.validarNome(null);
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero true quando passar nome válido", function() {
+			var retorno = controller.validarNome("Filipe Fofinho");
+			
+			expect(retorno).toBe(true);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("huehuehuebr");
+			
+			expect(retorno).toBe(false);
+		});
+		
 });
 
 describe( "Teste de validação de CPF", function() {

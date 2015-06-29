@@ -107,6 +107,38 @@ module.exports = function( app ) {
         return Math.sqrt(num);
     },
 
+    arredondaValor : function (num) {
+        return Math.round(num);
+    },
+
+    exponencial : function (num1, num2) {
+        return Math.pow(num1, num2);
+    }, 
+
+    areaQuadrado : function (num1, num2) {
+        return controller.multiplicar2Numeros (num1, num2);
+    }, 
+
+    validarTelefone : function( telefone ) {
+        if(telefone.length < 10)
+            return false;         
+        
+        return true;
+    },
+
+    validarNome : function( nome ) {
+        if(nome === " ")
+            return false;
+
+        if(nome === null)
+            return false;
+
+        if(nome === "huehuehuebr")  
+            return false;       
+        
+        return true;
+    },
+
     validarCPF : function (cpf) {
         var Soma;
         var Resto;
