@@ -2,7 +2,7 @@ var MongoClient = require('mongodb').MongoClient;
  
 var myCollection;
 //var db = MongoClient.connect('mongodb://127.0.0.1:27017/filipefofinho', function(err, db)
-var db = MongoClient.connect('mongodb://filipefofinho:12345678@ds047800.mongolab.com:47800/filipefofinho', function(err, db) 
+var db = MongoClient.connect('mongodb://filipefofinho2:12345678@ds047800.mongolab.com:47800/filipefofinho', function(err, db) 
 {
     if(err)
         throw err;
