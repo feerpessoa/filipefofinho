@@ -40,8 +40,32 @@ describe( "Teste de validação de CNPJ", function() {
 			expect(retorno).toBe(true);
 		});
 		
-		it("Espero false quando passar CNPJ inválido", function() {
+		it("Espero false quando passar CNPJ numerico mas inválido", function() {
 			var retorno = controller.validarCNPJ("23354848000115");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar CNPJ somente 0", function() {
+			var retorno = controller.validarCNPJ("00000000000000");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar CNPJ somente letras", function() {
+			var retorno = controller.validarCNPJ("aaaaa");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar CNPJ != 14", function() {
+			var retorno = controller.validarCNPJ("1111");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar CNPJ inválido primeiro numero", function() {
+			var retorno = controller.validarCNPJ("53354848000114");
 			
 			expect(retorno).toBe(false);
 		});
