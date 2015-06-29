@@ -1,5 +1,5 @@
 module.exports =  {
-    port : 3000,
+    port : process.env.PORT,
     address : "localhost",
     domain : "localhost"
 };
