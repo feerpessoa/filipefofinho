@@ -29,7 +29,7 @@
     "mongodb": "1.4.9"
   },
   "scripts": {
-    "test": "mocha --harmony-generators",
+     "test": "istanbul cover mocha --harmony-generators && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "start": "node server.js",
     "pretest": "./node_modules/jsxhint/cli.js src/"
   },
