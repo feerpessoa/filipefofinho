@@ -2,6 +2,7 @@ var controller = require("../app/controllers/index")();
 
 var assert = require("assert");
 var expect = require("expect");
+var mongo = require('mocha-mongo');
 
 describe("Teste de HL, index e nome", function() {
 	it("Espero receber a view index como retorno no metodo direcionarIndex", function() {
@@ -34,8 +35,22 @@ describe("Teste de HL, index e nome", function() {
 			expect( response.view ).toBe("index");		   
 	});
 
-});
+	it("Espero que minha funcao traga o nome do usuario e renderise para view index", function() {
+		var request = { 
+						body: 
+							{ 
+								nome : "Fernanda"
+							}
+						};
+		var response = criarResponse();
+		
+		controller.meuNome(request, response);
+		
+		expect(response.view).toEqual("index");
+		expect(response.object.nome).toEqual("Fernanda");
+	});
 
+});
 
 describe("Teste das operações", function() {
 	it("Espero que quando passar 2 e 3 retorne 5", function() {
@@ -112,6 +127,24 @@ describe("Teste das operações", function() {
 			expect( response.view ).toBe("subtrair");		   
 	});
 
+	it("Espero que minha funcao subtraia dois numeros e renderise para view subtrair", function() {
+		var request = { 
+						body: 
+							{ 
+								num1: '10',
+								num2: '3'
+							}
+						};
+		var response = criarResponse();
+		
+		controller.subtrair(request, response);
+		
+		expect(response.view).toEqual("subtrair");
+		expect(response.object.resultado).toEqual(7);
+
+			
+	});
+
 	it("Espero receber a view somar como retorno no metodo direcionarSoma", function() {
 
 			var request = { };
@@ -120,6 +153,22 @@ describe("Teste das operações", function() {
 			controller.direcionarSoma( request, response );
 			
 			expect( response.view ).toBe("somar");		   
+	});
+
+	it("Espero que minha funcao some dois numeros e renderise para view somar", function() {
+		var request = { 
+						body: 
+							{ 
+								num1: '3',
+								num2: '7'
+							}
+						};
+		var response = criarResponse();
+		
+		controller.somar(request, response);
+		
+		expect(response.view).toEqual("somar");
+		expect(response.object.resultado).toEqual(10);	
 	});
 
 });
@@ -185,6 +234,21 @@ describe( "Teste de validação de nome", function() {
 });
 
 describe( "Teste de validação de CPF", function() {
+		it("Espero receber a view validarCPF como retorno no metodo direcionarCPF", function() {
+
+			var request = { };
+			var response = criarResponse();
+			
+			controller.direcionarCPF( request, response );
+			
+			expect( response.view ).toBe("validarCPF");		   
+		});
+
+		it("Verifico se direcionarCPF é uma function", function() {
+			
+			expect(typeof controller.direcionarCPF).toEqual('function');
+		});
+	
 		it("Espero true quando passar CPF válido", function() {
 			var retorno = controller.validarCPF("08332068690");
 			

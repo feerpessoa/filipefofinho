@@ -43,12 +43,12 @@ module.exports = function( app ) {
         "nome" : nome
         }); 
 
-        myCollection.insert({nome: nome}, function(err, result) {
+     myCollection.insert({nome: nome}, function(err, result) {
             if(err)
                 throw err;
          
             console.log("********* " + nome + ", salvo com sucesso!!! *********");
-        });     
+        });          
 
     },
 
