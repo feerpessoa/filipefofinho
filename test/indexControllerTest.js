@@ -2,7 +2,6 @@ var controller = require("../app/controllers/index")();
 
 var assert = require("assert");
 var expect = require("expect");
-var mongo = require('mocha-mongo');
 
 describe("Teste de HL, index e nome", function() {
 	it("Espero receber a view index como retorno no metodo direcionarIndex", function() {
