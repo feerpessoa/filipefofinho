@@ -35,21 +35,6 @@ describe("Teste de HL, index e nome", function() {
 			expect( response.view ).toBe("index");		   
 	});
 
-	it("Espero que minha funcao traga o nome do usuario e renderise para view index", function() {
-		var request = { 
-						body: 
-							{ 
-								nome : "Fernanda"
-							}
-						};
-		var response = criarResponse();
-		
-		controller.meuNome(request, response);
-		
-		expect(response.view).toEqual("index");
-		expect(response.object.nome).toEqual("Fernanda");
-	});
-
 });
 
 describe("Teste das operações", function() {
