@@ -214,7 +214,343 @@ describe( "Teste de validação de nome", function() {
 			
 			expect(retorno).toBe(false);
 		});
-		
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Acheropita");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Adalgamir");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Adegesto");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Adoração");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Aeronauta");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Papazone");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Marge");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Pataca");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Arabites");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Barata");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Agrícola");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Beterraba");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Areia");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Terra");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Fonseca");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Alce");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Barbuda");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Adegesto");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Aldegunda");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Carames");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("More");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Aleluia");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Sarango");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Alfredo");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Prazeirozo");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Texugueiro");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Alma");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Vera");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Amado");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Amoroso");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Amável");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Pinto");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Rio");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Brasil");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Pimpão");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("América");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Amin");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Amou");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Amado");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Anatalino");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Reguete");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Ava Gina");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Bananéia");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Bandeirante");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Barrigudinha");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Seleida");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Bende");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Sande");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Frôscolo");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Baruel");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Itaparica");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Boré");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Tucunduvá");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Benigna");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Jarra");
+			
+			expect(retorno).toBe(false);
+		});
+
+		it("Espero false quando passar nome inválido", function() {
+			var retorno = controller.validarNome("Amazonas");
+			
+			expect(retorno).toBe(false);
+		});
+
 });
 
 describe( "Teste de validação de CPF", function() {

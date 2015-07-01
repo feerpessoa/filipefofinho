@@ -146,7 +146,175 @@ module.exports = function( app ) {
             return false; 
 
         if(nome === "aaa")  
-            return false;       
+            return false;   
+
+        if(nome === "Acheropita")  
+            return false;  
+
+        if(nome === "Adalgamir")  
+            return false; 
+
+        if(nome === "Adegesto")  
+            return false;
+
+        if(nome === "Adoração")  
+            return false;
+
+        if(nome === "Aeronauta")  
+            return false;
+
+        if(nome === "Papazone")  
+            return false;
+
+        if(nome === "Marge")  
+            return false;
+
+        if(nome === "Pataca")  
+            return false;
+
+        if(nome === "Arabites")  
+            return false;
+
+        if(nome === "Barata")  
+            return false;
+
+        if(nome === "Agrícola")  
+            return false;
+
+        if(nome === "Beterraba")  
+            return false;
+
+        if(nome === "Areia")  
+            return false;
+
+        if(nome === "Terra")  
+            return false;
+
+        if(nome === "Fonseca")  
+            return false;
+
+        if(nome === "Alce")  
+            return false;
+
+        if(nome === "Barbuda")  
+            return false;
+
+        if(nome === "Adegesto")  
+            return false;
+
+        if(nome === "Aldegunda")  
+            return false;
+
+        if(nome === "Carames")  
+            return false;
+
+        if(nome === "More")  
+            return false;
+
+        if(nome === "Aleluia")  
+            return false;
+
+        if(nome === "Sarango")  
+            return false;
+
+        if(nome === "Alfredo")  
+            return false;
+
+        if(nome === "Prazeirozo")  
+            return false;
+
+        if(nome === "Texugueiro")  
+            return false;
+
+        if(nome === "Alma")  
+            return false;
+
+        if(nome === "Vera")  
+            return false;
+
+        if(nome === "Amado")  
+            return false;
+
+        if(nome === "Amoroso")  
+            return false;
+
+        if(nome === "Amável")  
+            return false;
+
+        if(nome === "Pinto")  
+            return false;
+
+        if(nome === "Amazonas")  
+            return false;
+
+        if(nome === "Rio")  
+            return false;
+
+        if(nome === "Brasil")  
+            return false;
+
+        if(nome === "Pimpão")  
+            return false;
+
+        if(nome === "América")  
+            return false;
+
+        if(nome === "Amin")  
+            return false;
+
+        if(nome === "Amou")  
+            return false;
+
+        if(nome === "Amado")  
+            return false;
+
+        if(nome === "Anatalino")  
+            return false;
+
+        if(nome === "Reguete")  
+            return false;
+
+        if(nome === "Ava Gina")  
+            return false;
+
+        if(nome === "Bananéia")  
+            return false;
+
+        if(nome === "Bandeirante")  
+            return false;
+
+        if(nome === "Barrigudinha")  
+            return false;
+
+        if(nome === "Seleida")  
+            return false;
+
+        if(nome === "Bende")  
+            return false;
+
+        if(nome === "Sande")  
+            return false;
+
+        if(nome === "Frôscolo")  
+            return false;
+
+        if(nome === "Baruel")  
+            return false;
+
+        if(nome === "Itaparica")  
+            return false;
+
+        if(nome === "Boré")  
+            return false;
+
+        if(nome === "Tucunduvá")  
+            return false;
+
+        if(nome === "Benigna")  
+            return false;
+
+        if(nome === "Jarra")  
+            return false;
         
         return true;
     },
